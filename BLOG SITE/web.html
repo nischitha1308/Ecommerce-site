@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            background-color: yellow;
+            color: blue;
+            text-align: center;
+            font-size: 2.5rem;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 14px 0px;
+            font-weight: bolder;
+        }
+        nav{
+            background-color: rgb(142, 154, 47);
+            padding: 10px 0px;
+        }
+        nav li{
+            list-style-type: none;
+            display: inline ;
+        }
+        nav a{
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: black;
+            margin-left: 310px;
+        }
+        nav a:hover{
+            color: white;
+        }
+        .electronics{
+            width: 100%;
+            background-color: azure;
+            padding: 10px 0px;
+            border-radius: 10px;
+        }
+        .electronics>h3{
+            font-size: 1.5rem
+        }
+        .products{
+            width: 99%;
+            background-color: beige;
+            margin-left: 10px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: repeat(4,250px);
+            gap: 40px;
+            justify-content: space-evenly;
+            padding: 10px 0px;
+        }
+        .products>div{
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px 0px;
+            width: 200px;
+            height:auto;
+            padding: 10px 0px;
+            transition: transform 1s;
+        }.products>div:hover{
+            transform: scale(1.2);
+        }
+        .products>div>img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .products>div>p{
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .products>div>button{
+            width: 60px;
+            padding: 5px 0px;
+            margin-left: 65px;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+        .products>div>button:hover{
+            background-color: blanchedalmond;
+        }
+        footer{
+            background-color:  rgb(142, 154, 47);
+            padding: 20px 0px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>Easy Buy</header>
+    <nav>
+        <ul>
+            <li><a href="#electronics">Electronics</a></li>
+            <li><a href="#footwear">Footwear</a></li>
+            <li><a href="#fashion">Fashion</a></li>
+        </ul>
+    </nav>
+    <div class="electronics" id="electronics">
+        <h3>Electronics</h3>
+        <div class="products">
+            <div class="product1">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/339507308/CF/WG/NO/4550856/apple-macbook-air-500x500.png">
+                <p>Laptop<br>$200</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product2">
+                <img src="https://rotarywatches.com/cdn/shop/collections/FR8A4493.jpg?v=1723648676&width=2048">
+                <p>Watch<br>$50</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQROq99Y9oJBg3DgP4F66n1EW-SKZfwoBBz3WsyD6HhxdJIsjLO_OCIyVsvPLK6630kTGU&usqp=CAU">
+                <p>HeadPhones<br>$30</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkdLccqVwKb9BGj_H_9mSqLKBndpG1AgGU5fQSiKMJoEtEgneJKvUtr4CgNFyTz6XUn_U&usqp=CAU">
+                <p>Camera<br>$20</p>
+                <button type="submit">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="electronics" id="footwear">
+        <h3>FootWear</h3>
+        <div class="products">
+            <div class="product1">
+                <img src="https://redtape.com/cdn/shop/files/RSO4034_1_40cd841c-11dc-4c78-ab85-bfad034e31fe.jpg?v=1741350219">
+                <p>Shoes<br>$50</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv9QvfLqzCVhiTIJKVQf_Bh6epnJ1ohjZIQybBP4iQBOjsGDJgFEjiQBBrkr6F2AtLGfA&usqp=CAU">
+                <p>Heels<br>$40</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product3">
+                <img src="https://images.meesho.com/images/products/451401443/m2ndx_512.webp">
+                <p>Crocs<br>$60</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product4">
+                <img src="https://m.media-amazon.com/images/I/81BxkIl1VRL._AC_UY900_.jpg">
+                <p>Flats<br>$20</p>
+                <button type="submit">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="electronics" id="fashion">
+        <h3>Fashion</h3>
+        <div class="products">
+            <div class="product1">
+                <img src="https://images.meesho.com/images/products/390128811/ek4id_512.webp">
+                <p>T-Shirts<br>$10</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product2">
+                <img src="https://i5.walmartimages.com/seo/Allegra-K-Smocked-Crop-Top-for-Women-s-Bubble-Sleeve-Peasant-Gingham-Plaid-Tops-XS-Yellow_2057c8fc-4a39-4733-9fe2-bcab9e695a58.6da2358c7a3d1e9f08073d2837d7b392.jpeg?odnHeight=320&odnWidth=320&odnBg=FFFFFF">
+                <p>Crop Top<br>$20</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product3">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2022/11/NW/LU/QS/162893285/310483780-490807199380287-245773695084400159-n-500x500.webp">
+                <p>Bodycon<br>$40</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product4">
+                <img src="https://i.etsystatic.com/51922331/r/il/74ab36/6029921709/il_340x270.6029921709_rqeg.jpg">
+                <p>Cardigan<br>$30</p>
+                <button type="submit">Buy</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Make Ur Self Preety<br>@easybuy.com</p>
+        
+    </footer>
+</body>
+</html>

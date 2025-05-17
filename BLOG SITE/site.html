@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        header{
+            background-color: yellow;
+            color: blue;
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            font-size: 2.5rem;
+            font-weight: bolder;
+            padding: 14px 0px;
+        }
+        nav{
+            background-color: rgb(169, 191, 72);
+            padding: 10px 0px;
+        }
+        nav li{
+            list-style-type: none;
+            display: inline;
+        }
+        nav a{
+            text-decoration: none;
+            color: black;
+            margin-left: 320px;
+            font-size: 1.3rem;
+        }
+        a:hover{
+            color: white;
+        }
+        .electronics{
+            background-color: aliceblue;
+            padding: 10px 0px;
+            width: 100%;
+        }
+        .electronics h3{
+            font-size: 1.5rem;
+        }
+        .products{
+            background-color: antiquewhite;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            height: auto;
+            margin: 0px 10px;
+            border-radius: 10px;
+        }
+        .products>div{
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px 0px;
+            width: 200px;
+            height:auto;
+            padding: 10px 0px;
+            transition: transform 1s;
+        }
+        .products>div:hover{
+            transform: scale(1.1);
+        }
+        .products img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .products p{
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        .products button{
+            width: 90px;
+            padding: 5px;
+            margin-left: 60px;
+            border-radius: 10px;
+            background-color: aliceblue;
+        }
+        button:hover{
+            background-color: burlywood;
+        }
+        footer{
+            background-color: rgb(169, 191, 72) ;
+            padding: 20px 0px;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>Flipkart</header>
+    <nav>
+        <ul>
+            <li><a href="#electronics">Electronics</a></li>
+            <li><a href="#footwear">Footwear</a></li>
+            <li><a href="#fashion">Fashion</a></li>
+        </ul>
+    </nav>
+    <div class="electronics" id="electronics">
+        <h3>Electronics</h3>
+        <div class="products">
+            <div class="product1">
+                <img src="https://images.you.gr/ecomfiles/attachments/756/756843-1_1024.jpg">
+                <p>Laptop<br>$200</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product2">
+                <img src="https://image01-in.oneplus.net/media/202406/19/dee6a15ca313f3a7b211f2a440e9f05e.png?x-amz-process=image/format,webp/quality,Q_80">
+                <p>Phones<br>$100</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMoHSasc8Ek4yI1W5h3LL7HC7KnY_tzvxv0g&s">
+                <p>HeadSet<br>$300</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product4">
+                <img src="https://pucglink.com/wp-content/uploads/2016/03/apple-Ipad-3-1.webp">
+                <p>Ipad<br>$250</p>
+                <button type="submit">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="electronics" id="footwear">
+        <h3>Footwear</h3>
+        <div class="products">
+            <div class="product1">
+                <img src="https://fuelshoes.com/cdn/shop/files/8_1e1df76b-b544-44fc-8c2f-e31dba4b1eb3.jpg?v=1720001401&width=3000">
+                <p>Shoes<br>$50</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product2">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51cTA0LvU1L._UL500_.jpg">
+                <p>Heels<br>$60</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product3">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/292961893/MD/WL/FO/182365761/women-casual-shallow-mouth-shoe-pointed-toe-shoe-working-flat-shoes.jpg">
+                <p>Flats<br>$40</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product4">
+                <img src="https://www.anacondastores.com/medias/BP90200489-white-6.jpg-SPOTWF-productHero?context=bWFzdGVyfGltYWdlc3w0Mzc5MXxpbWFnZS9qcGVnfGltYWdlcy9oMzUvaGU3LzE1Nzc2OTY3Nzg2NTI2L0JQOTAyMDA0ODktd2hpdGVfNi5qcGdfU1BPVFdGX3Byb2R1Y3RIZXJvfGI4OTVhMWJhOTI3YThlMzUwZGEwMWM3N2FjODVkY2ZiN2I3NWNmYjQ0NWQ3NDg5ZTY3Y2I4ZTNhMTVhYTE0ZDU">
+                <p>Crocs<br>$30</p>
+                <button type="submit">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="electronics" id="fashion">
+        <h3>Fashion</h3>
+        <div class="products">
+            <div class="product1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE5V5duzltKp0e7-dkoin5E30o2HZzq3SeAg&s">
+                <p>T-Shirts<br>$30</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product2">
+                <img src="https://images-eu.ssl-images-amazon.com/images/I/41L3k8BoSWL._AC_UL600_SR600,600_.jpg">
+                <p>BodyCons<br>$50</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product3">
+                <img src="https://shapewear.pk/cdn/shop/products/long-silk-maxi-dress-party-dress-for-women-online-in-pakistan-1.jpg">
+                <p>Maxis<br>$35</p>
+                <button type="submit">Buy</button>
+            </div>
+            <div class="product4">
+                <img src="https://assets.ajio.com/medias/sys_master/root/20230529/H252/6473fd80d55b7d0c631a137c/-473Wx593H-466203065-red-MODEL.jpg">
+                <p>Ethnic wear<br>$20</p>
+                <button type="submit">Buy</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Happy Shopping<br>@flipkart.com</p>
+    </footer>
+</body>
+</html>
